@@ -51,7 +51,7 @@
 
 -(void) setUpConnection {
     //Set our display name to be the name of the device
-    self.peerID = [[MCPeerID alloc] initWithDisplayName:@"Glenns iPhone"];
+    self.peerID = [[MCPeerID alloc] initWithDisplayName:[UIDevice currentDevice].name;
     
     //Create a new session with our peerID
     self.session = [[MCSession alloc] initWithPeer:self.peerID];
