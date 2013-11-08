@@ -19,6 +19,9 @@
 		ABA8AC5F1829A05400B4845F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA8AC471829A05300B4845F /* UIKit.framework */; };
 		ABA8AC671829A05400B4845F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABA8AC651829A05400B4845F /* InfoPlist.strings */; };
 		ABA8AC691829A05400B4845F /* PeerToPeerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA8AC681829A05400B4845F /* PeerToPeerTests.m */; };
+		ABA8AC731829A20F00B4845F /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA8AC721829A20F00B4845F /* MultipeerConnectivity.framework */; };
+		ABA8AC771829A2DE00B4845F /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA8AC751829A2DE00B4845F /* ChatViewController.m */; };
+		ABA8AC781829A2DE00B4845F /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA8AC761829A2DE00B4845F /* ChatViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		ABA8AC641829A05400B4845F /* PeerToPeerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PeerToPeerTests-Info.plist"; sourceTree = "<group>"; };
 		ABA8AC661829A05400B4845F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ABA8AC681829A05400B4845F /* PeerToPeerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeerToPeerTests.m; sourceTree = "<group>"; };
+		ABA8AC721829A20F00B4845F /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		ABA8AC741829A2DE00B4845F /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatViewController.h; path = ../ChatViewController.h; sourceTree = "<group>"; };
+		ABA8AC751829A2DE00B4845F /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatViewController.m; path = ../ChatViewController.m; sourceTree = "<group>"; };
+		ABA8AC761829A2DE00B4845F /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChatViewController.xib; path = ../ChatViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABA8AC731829A20F00B4845F /* MultipeerConnectivity.framework in Frameworks */,
 				ABA8AC461829A05300B4845F /* CoreGraphics.framework in Frameworks */,
 				ABA8AC481829A05300B4845F /* UIKit.framework in Frameworks */,
 				ABA8AC441829A05300B4845F /* Foundation.framework in Frameworks */,
@@ -96,6 +104,7 @@
 		ABA8AC421829A05300B4845F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ABA8AC721829A20F00B4845F /* MultipeerConnectivity.framework */,
 				ABA8AC431829A05300B4845F /* Foundation.framework */,
 				ABA8AC451829A05300B4845F /* CoreGraphics.framework */,
 				ABA8AC471829A05300B4845F /* UIKit.framework */,
@@ -107,6 +116,9 @@
 		ABA8AC491829A05300B4845F /* PeerToPeer */ = {
 			isa = PBXGroup;
 			children = (
+				ABA8AC741829A2DE00B4845F /* ChatViewController.h */,
+				ABA8AC751829A2DE00B4845F /* ChatViewController.m */,
+				ABA8AC761829A2DE00B4845F /* ChatViewController.xib */,
 				ABA8AC521829A05400B4845F /* AppDelegate.h */,
 				ABA8AC531829A05400B4845F /* AppDelegate.m */,
 				ABA8AC551829A05400B4845F /* Images.xcassets */,
@@ -221,6 +233,7 @@
 			files = (
 				ABA8AC4E1829A05400B4845F /* InfoPlist.strings in Resources */,
 				ABA8AC561829A05400B4845F /* Images.xcassets in Resources */,
+				ABA8AC781829A2DE00B4845F /* ChatViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +254,7 @@
 			files = (
 				ABA8AC541829A05400B4845F /* AppDelegate.m in Sources */,
 				ABA8AC501829A05400B4845F /* main.m in Sources */,
+				ABA8AC771829A2DE00B4845F /* ChatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
